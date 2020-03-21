@@ -1,0 +1,703 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Залог Центр</title>
+  <meta name="keywords" content="text, test">
+  <meta name="description" content="very long text description">
+  <link rel="stylesheet" type="text/css" href="assets/js/slick/slick.css"/>
+  <link rel="stylesheet" href="assets/css/style.css">
+  <link rel="stylesheet" href="assets/css/media.css">
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <script src="assets/js/jquery-3.4.1.min.js"></script>
+  <script src="assets/js/jquery.maskedinput.min.js"></script>
+  <script src="assets/js/rangeslider.min.js"></script>
+  <script type="text/javascript" src="assets/js/slick/slick.min.js"></script>
+  <script src="assets/js/custom.js"></script>
+  <!--[if lt IE 9]>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.2/html5shiv.min.js"></script>
+  <![endif]-->
+</head>
+<body>
+
+<header class="header">
+  <div class="container">
+    <div class="header__top">
+      <a href="#" class="header__logo"><span>Zalog</span>.center</a>
+      <div class="header__info">
+        <div class="header__info-icon"></div>
+        <div class="header__info-text">
+          <a href="tel:7 495 220 53 20" class="header__info-text-big">7 495 220 53 20</a>
+          <div>пн-пт с 10:00 до 20:00</div>
+        </div>
+      </div>
+    </div>
+    <div class="header__text">
+      <h1 class="header__title"><span>Кредит под залог</span> недвижимости в день обращения!</h1>
+      <div class="header__benefits">
+        <div class="header__benefits-item">
+          <div class="header__benefits-item-title">Ставка от</div>
+          <div class="header__benefits-item-text">8% годовых</div>
+        </div>
+        <div class="header__benefits-item">
+          <div class="header__benefits-item-title">Нужны всего</div>
+          <div class="header__benefits-item-text">два документа</div>
+        </div>
+        <div class="header__benefits-item">
+          <div class="header__benefits-item-title">Деньги выдаются</div>
+          <div class="header__benefits-item-text">Уже сегодня</div>
+        </div>
+      </div>
+    </div>
+    <div class="header__form">
+      <div class="header__form-inner">
+        <div class="header__form-title">Отправить заявку</div>
+        <form method="get" class="header__form-form">
+          <input type="text" name="uname" id="uname" class="inp inp--s" placeholder="Ваше имя">
+          <input type="tel" name="utel" id="utel" class="inp inp--s" placeholder="Ваш телефон">
+          <div class="online__form-btns">
+            <label for="chh" class="label-checkbox inp--s">
+              <input type="checkbox" name="chh" id="chh" checked>
+              <span></span>
+              <span>Даю согласие на обработку персональных данных</span>
+            </label>
+            <a href="#" class="btn"><span>Получить деньги</span></a>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</header>
+
+<section class="calculate">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__bullets"><span></span><span></span><span></span></div>
+      <h2>Рассчитайте ваш кредит</h2>
+    </div>
+    <div class="calculate__form">
+      <div class="calculator">
+        <div class="calculator__field">
+          <label for="fSum" class="calculator__bold">Сумма кредита</label>
+          <input type="text" name="fSum" id="fSum" class="inp inp--xs" value="0">
+          <div class="calculator__range">
+            <input type="range" min="300000" max="50000000" step="1" class="sum" value="300000">
+          </div>
+          <div class="calculator__bold">300 000</div>
+          <div class="calculator__bold">50 млн. руб.</div>
+        </div>
+        <div class="calculator__field">
+          <label for="fDate" class="calculator__bold">Срок кредита</label>
+          <input type="text" name="fDate" id="fDate" class="inp inp--xs" value="1">
+          <div class="calculator__range">
+            <input type="range" min="1" max="20" step="1" class="date" value="1">
+          </div>
+          <div class="calculator__bold">1 год</div>
+          <div class="calculator__bold">20 лет</div>
+        </div>
+        <div class="calculator__field-radio">
+          <div class="calculator__bold">Тип платежа</div>
+          <div class="calculator-radio">
+            <div class="calculator-radio__item">
+              <input type="radio" name="creditType" id="annuitet" checked>
+              <label for="annuitet">Аннуитетный</label>
+            </div>
+            <div class="calculator-radio__item">
+              <input type="radio" name="creditType" id="sharoviy">
+              <label for="sharoviy">Шаровый</label>
+            </div>
+          </div>
+        </div>
+        <div class="calculator__amount">
+          <div class="calculator__bold">Ваш ежемесячный платёж составит:</div>
+          <div class="calculator__amount-value"><span>27 000</span> руб./мес</div>
+        </div>
+      </div>
+      <div class="booking">
+        <div class="booking__inner">
+          <div class="booking__title">Забронировать аванс</div>
+          <div class="booking__text">Кредит в размере от 300 000 рублей может быть выдан вам в течение одного рабочего
+            дня. <br>Аванс в размере от 30 000 рублей может быть выдан вам в течение 30 минут при посещении офиса.
+            <br><br>
+            Если вам необходим аванс вы можете его забронировать
+          </div>
+          <div class="booking__btn">
+            <a href="#" class="btn btn--blue"><span>Забронировать</span></a>
+          </div>
+          <div class="booking__form">
+            <input type="text" name="ww" id="ww" class="inp inp--s" placeholder="Ваше имя">
+            <input type="tel" name="wqw" id="wqw" class="inp inp--s" placeholder="Ваш телефон">
+            <div class="online__form-btns">
+              <label for="chq" class="label-checkbox inp--s">
+                <input type="checkbox" name="chq" id="chq" checked>
+                <span></span>
+                <span>Даю согласие на обработку персональных данных</span>
+              </label>
+              <a href="#" class="btn"><span>Получить деньги</span></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="loan-object">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__bullets"><span></span><span></span><span></span></div>
+      <h2>Объектом залога может являться:</h2>
+    </div>
+    <div class="loan-object__items">
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/loan-object-1.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">01</div>
+        </div>
+        <div class="loan-object-item__title">Квартира</div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/loan-object-2.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">02</div>
+        </div>
+        <div class="loan-object-item__title">Доля квартиры</div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/loan-object-3.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">03</div>
+        </div>
+        <div class="loan-object-item__title">Комната</div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/loan-object-4.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">04</div>
+        </div>
+        <div class="loan-object-item__title">Дом</div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/loan-object-5.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">05</div>
+        </div>
+        <div class="loan-object-item__title">Коттедж</div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/loan-object-6.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">06</div>
+        </div>
+        <div class="loan-object-item__title">Таунхаус</div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/loan-object-7.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">07</div>
+        </div>
+        <div class="loan-object-item__title">
+          <div>Земельный</div>
+          участок
+        </div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/loan-object-8.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">08</div>
+        </div>
+        <div class="loan-object-item__title">
+          <div>Офисные,</div>
+          складские и производственные помещения
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="documents">
+  <div class="container">
+    <div class="documents__inner">
+      <div class="documents__info">
+        <div class="documents__info__title">Для оформления залога недвижимости в большиснтве
+          случаев достаточно двух документов:
+        </div>
+        <div class="documents__info__text">У нас вы можете получить бесплатную юридическую консультацию. Для всех
+          залоговых кредитов осуществляется бесплатное юридическое и натариальное сопровождение и, при необходимости,
+          сбор необходимых документов.
+        </div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/documents-1.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">01</div>
+        </div>
+        <div class="loan-object-item__title">Паспорт</div>
+      </div>
+      <div class="loan-object-item">
+        <div class="loan-object-item__circle">
+          <div class="loan-object-item__circle-inner">
+            <img src="assets/img/documents-2.png" alt="">
+          </div>
+          <div class="loan-object-item__circle-number">02</div>
+        </div>
+        <div class="loan-object-item__title">Документ основание на владение объектом недвижимости</div>
+      </div>
+    </div>
+    <div class="documents__btn"><a href="#" class="btn"><span>Заказать консультацию</span></a></div>
+  </div>
+</section>
+
+<section class="online">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__bullets"><span></span><span></span><span></span></div>
+      <h2>Вы можете узнать сумму одобренного
+        вам кредита онлайн</h2>
+      <p>оценка производится дежурным специалистом по залогу недвижимости, в течениe 2-х минут</p>
+    </div>
+  </div>
+  <div class="round-bg round-bg--online">
+    <form method="get" class="online__form">
+      <select name="q" id="q" class="select inp--m" title="Количество комнат">
+        <option value="0" selected>Количество комнат</option>
+        <option value="1">1</option>
+        <option value="2">2</option>
+      </select>
+      <input type="text" name="aq" id="aq" class="inp inp--l" placeholder="Адрес">
+      <input type="text" name="qq" id="qq" class="inp inp--m" placeholder="Площадь м2">
+      <input type="text" name="aqw" id="aqw" class="inp inp--s" placeholder="Город">
+      <input type="tel" name="ae" id="ae" class="inp inp--s" placeholder="Ваш телефон">
+      <div class="online__form-btns">
+        <label for="ch" class="label-checkbox inp--s">
+          <input type="checkbox" name="ch" id="ch" checked>
+          <span></span>
+          <span>Даю согласие на обработку персональных данных</span>
+        </label>
+        <a href="#" class="btn"><span>Оценить сейчас</span></a>
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="feedbacks">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__bullets"><span></span><span></span><span></span></div>
+      <h2>Примеры кредитов под залог и отзывы
+        наших клиентов</h2>
+      <p>уже более 5000 человек получили кредит под залог в день обращения</p>
+    </div>
+  </div>
+  <div class="round-bg round-bg--feedbacks">
+    <div class="feedbacks__inner">
+      <div class="feedbacks__slider">
+        <div>
+          <div class="feedback">
+            <div class="feedback-about">
+              <div class="feedback-about__item">
+                <div>Заемщик:</div>
+                <span>Берестов Егор Алексеевич</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Объект залога:</div>
+                <span>Дом в г. Щербинка</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Стоимость залога:</div>
+                <span>11 000 000 р.</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Выдан аванс:</div>
+                <span>740 000 р.</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Выдан кредит:</div>
+                <span>10 000 000 р.</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Процентная ставка:</div>
+                <span>8,7% годовых</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Ежемесячный платеж:</div>
+                <span>100 000 р.</span>
+              </div>
+            </div>
+            <div class="feedback-content">
+              <div class="feedback-content__user">
+                <img src="assets/img/feedback-1.jpg" alt="name">
+                <div class="feedback-content__user-quote"></div>
+              </div>
+              <div class="feedback-content__text">
+                Брал кредит я всего два раза в жизни. В обоих случаях закладывал дом, но в первый раз пошел в банк. Так
+                они мне там надоели, что второй раз идти в банк я не рискнул – слишком много волокиты и слишком долго
+                все. Второй раз решил обратиться к частникам в «ФинПро». Пока не жалею. Только плюсы – оформление
+                быстрое, документов минимум, условия почти не отличаются. Смысл возиться с банками? Ребятам спасибо за
+                то, что быстро делают свою работу. Брал кредит я всего два раза в жизни. В обоих случаях закладывал дом,
+                но в первый раз пошел в банк. Так они мне там надоели, что второй раз идти в банк я не рискнул – слишком
+                много волокиты и слишком долго все. Второй раз решил обратиться к частникам в «ФинПро». Пока не жалею.
+                Только плюсы – оформление быстрое, документов
+              </div>
+              <div class="feedback-content__btn">
+                <a href="#" class="btn"><span>Оформить себе</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div>
+          <div class="feedback">
+            <div class="feedback-about">
+              <div class="feedback-about__item">
+                <div>Заемщик:</div>
+                <span>Берестов Егор Алексеевич</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Объект залога:</div>
+                <span>Дом в г. Щербинка</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Стоимость залога:</div>
+                <span>11 000 000 р.</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Выдан аванс:</div>
+                <span>740 000 р.</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Выдан кредит:</div>
+                <span>10 000 000 р.</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Процентная ставка:</div>
+                <span>8,7% годовых</span>
+              </div>
+              <div class="feedback-about__item">
+                <div>Ежемесячный платеж:</div>
+                <span>100 000 р.</span>
+              </div>
+            </div>
+            <div class="feedback-content">
+              <div class="feedback-content__user">
+                <img src="assets/img/feedback-1.jpg" alt="name">
+                <div class="feedback-content__user-quote"></div>
+              </div>
+              <div class="feedback-content__text">
+                Брал кредит я всего два раза в жизни. В обоих случаях закладывал дом, но в первый раз пошел в банк. Так
+                они мне там надоели, что второй раз идти в банк я не рискнул – слишком много волокиты и слишком долго
+                все. Второй раз решил обратиться к частникам в «ФинПро». Пока не жалею. Только плюсы – оформление
+                быстрое, документов минимум, условия почти не отличаются. Смысл возиться с банками? Ребятам спасибо за
+                то, что быстро делают свою работу. Брал кредит я всего два раза в жизни. В обоих случаях закладывал дом,
+                но в первый раз пошел в банк. Так они мне там надоели, что второй раз идти в банк я не рискнул – слишком
+                много волокиты и слишком долго все. Второй раз решил обратиться к частникам в «ФинПро». Пока не жалею.
+                Только плюсы – оформление быстрое, документов
+              </div>
+              <div class="feedback-content__btn">
+                <a href="#" class="btn"><span>Оформить себе</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-arrow slider-arrow--prev js-feedbacks-prev"></div>
+      <div class="slider-arrow slider-arrow--next js-feedbacks-next"></div>
+    </div>
+  </div>
+</section>
+
+<section class="partners">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__bullets"><span></span><span></span><span></span></div>
+      <h2>Наши партнёры</h2>
+    </div>
+    <div class="partners__items">
+      <div class="partners__item">
+        <img src="assets/img/partners-1.jpg" alt="company name">
+      </div>
+      <div class="partners__item">
+        <img src="assets/img/partners-2.jpg" alt="company name">
+      </div>
+      <div class="partners__item">
+        <img src="assets/img/partners-3.jpg" alt="company name">
+      </div>
+      <div class="partners__item">
+        <img src="assets/img/partners-4.jpg" alt="company name">
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="inrestors">
+  <div class="round-bg round-bg--inrestors">
+    <div class="inrestors__inner">
+      <div class="inrestors__cta">
+        <div class="inrestors__cta-text">Если вся сумма нужна
+          максимально быстро
+          <span>не тратьте время!</span>
+          запишитесь на приём
+          к частному инвестору
+          прямо сейчас!
+        </div>
+        <div class="inrestors__cta-btn">
+          <a href="#" class="btn"><span>Записаться</span></a>
+        </div>
+      </div>
+      <div class="inrestors__slider">
+        <div class="inrestors__slider-item inrestors-person">
+          <div class="inrestors-person__img">
+            <img src="assets/img/investor-1.jpg" alt="">
+          </div>
+          <div class="inrestors-person__about">
+            <div class="inrestors-person__about-item">
+              <span>Берестов Егор Алексеевич</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Процентная ставка:</div>
+              <span>8,7% годовых</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Максимальная сумма:</div>
+              <span> 740 000 р.</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Переоформление собственности:</div>
+              <span>Нет</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Выдача аванса:</div>
+              <span>Да</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Размер аванса:</div>
+              <span>10%</span>
+            </div>
+          </div>
+        </div>
+        <div class="inrestors__slider-item inrestors-person">
+          <div class="inrestors-person__img">
+            <img src="assets/img/investor-2.jpg" alt="">
+          </div>
+          <div class="inrestors-person__about">
+            <div class="inrestors-person__about-item">
+              <span>Берестов Elena Алексеевич</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Процентная ставка:</div>
+              <span>18,7% годовых</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Максимальная сумма:</div>
+              <span> 740 000 р.</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Переоформление собственности:</div>
+              <span>Нет</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Выдача аванса:</div>
+              <span>Да</span>
+            </div>
+            <div class="inrestors-person__about-item">
+              <div>Размер аванса:</div>
+              <span>10%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="slider-arrow slider-arrow--prev js-investor-prev"></div>
+      <div class="slider-arrow slider-arrow--next js-investor-next"></div>
+    </div>
+  </div>
+</section>
+
+<section class="one-call">
+  <div class="container">
+    <div class="one-call__inner">
+      <div class="one-call__title">Всего один звонок</div>
+      <div class="one-call__text">и в течение часа вы уже сможете
+        забрать аванс или получить полную
+        сумму кредита уже сегодня
+      </div>
+      <a href="tel:+7 (495) 162 67 58" class="one-call__number">+7 (495) 162 67 58</a>
+      <div class="one-call__btn">
+        <a href="#" class="btn"><span>Заказать звонок</span></a>
+      </div>
+    </div>
+    <div class="one-call__girl">
+      <img src="assets/img/one-call-bg-girl.png" alt="">
+    </div>
+  </div>
+</section>
+
+<section class="about">
+  <div class="container">
+    <div class="section-title">
+      <div class="section-title__bullets"><span></span><span></span><span></span></div>
+      <h2>О проекте</h2>
+    </div>
+    <div class="about__text">
+      <div>Брал кредит я всего два раза в жизни. В обоих случаях закладывал дом, но в первый раз пошел в банк. Так они
+        мне
+        там надоели, что второй раз идти в банк я не рискнул – слишком много волокиты и слишком долго все. Второй раз
+        решил обратиться к частникам в «ФинПро». Пока не жалею. Только плюсы – оформление быстрое, документов минимум,
+        условия почти не отличаются. Смысл возиться с банками? Ребятам спасибо за то, что быстро делают свою работу.
+        Брал
+        кредит я всего два раза в жизни. В обоих случаях закладывал дом, но в первый раз пошел в банк. Так они мне там
+        надоели, что второй раз идти в банк я не рискнул – слишком много волокиты и слишком долго все. Второй раз решил
+        обратиться к частникам в «ФинПро». Пока не жалею. Только плюсы – оформление быстрое, документов минимум, условия
+        почти не отличаются. Смысл возиться с банками? Ребятам спасибо за то, что быстро делают свою работу.
+      </div>
+      <div>Брал кредит я всего два раза в жизни. В обоих случаях закладывал дом, но в первый раз пошел в банк. Так они
+        мне
+        там надоели, что второй раз идти в банк я не рискнул – слишком много волокиты и слишком долго все. Второй раз
+        решил обратиться к частникам в «ФинПро». Пока не жалею. Только плюсы – оформление быстрое, документов минимум,
+        условия почти не отличаются. Смысл возиться с банками? Ребятам спасибо за то, что быстро делают свою работу.
+        Брал
+        кредит я всего два раза в жизни. В обоих случаях закладывал дом, но в первый раз пошел в банк. Так они мне там
+        надоели, что второй раз идти в банк я не рискнул – слишком много волокиты и слишком долго все. Второй раз решил
+        обратиться к частникам в «ФинПро». Пока не жалею. Только плюсы – оформление быстрое, документов минимум, условия
+        почти не отличаются. Смысл возиться с банками? Ребятам спасибо за то, что быстро делают свою работу.
+        Брал кредит я всего два раза в жизни. В обоих случаях закладывал дом, но в первый раз пошел в банк. Так они мне
+        там надоели, что второй раз идти в банк я не рискнул – слишком много волокиты и слишком долго все. Второй раз
+        решил обратиться к частникам в «ФинПро». Пока не жалею. Только плюсы – оформление быстрое, документов минимум,
+        условия почти не отличаются. Смысл возиться с банками? Ребятам спасибо за то, что быстро делают свою работу.
+        Брал
+        кредит я всего два раза в жизни. В обоих случаях закладывал дом, но в первый раз пошел в банк. Так они мне там
+        надоели, что второй раз идти в банк я не рискнул – слишком много волокиты и слишком долго все. Второй раз решил
+        обратиться к частникам в «ФинПро». Пока не жалею. Только плюсы – оформление быстрое, документов минимум, условия
+        почти не отличаются. Смысл возиться с банками? Ребятам спасибо за то, что быстро делают свою работу.
+      </div>
+    </div>
+  </div>
+</section>
+
+<section class="contacts">
+  <div class="container">
+    <div class="contacts__box">
+      <div class="contacts__title">Контакты</div>
+      <div class="contacts__item">
+        <div>Адрес:</div>
+        <div>г. Москва,</div>
+        <div>ул. Грузинский Вал 11, стр 4, Офис 11</div>
+      </div>
+      <div class="contacts__item">
+        <div>Телефон:</div>
+        <a href="tel:7 495 220 53 20">7 495 220 53 20</a>
+      </div>
+      <div class="contacts__item">
+        <div> Почта:</div>
+        <a href="mailto:info@visaberi.ru">info@visaberi.ru</a>
+      </div>
+    </div>
+  </div>
+  <div id="mapC"></div>
+</section>
+
+<footer class="footer">
+  <div class="container">
+    <div class="footer__inner">
+      <div class="footer__info">
+        <div class="footer__logo">Zalog.center</div>
+        <div class="footer__address">
+          <div class="footer__title">ВЦ Белорусская</div>
+          <div>г. Москва, улица Грузинский вал, дом 11, стр. 4. офис 11. этаж - 2.</div>
+          <div>Бесплатная парковка для наших гостей!</div>
+          <div>Время работы офиса:</div>
+          <div>пн-пт с 10:00 до 20:00</div>
+          <div>сб с 12:00 до 18:00</div>
+          <div>вс по записи</div>
+        </div>
+        <div class="footer__contacts">
+          <div class="footer__contacts-item">
+            <div class="footer__title">Whatsapp</div>
+            <a href="tel:7 495 220 53 20">7 495 220 53 20</a>
+          </div>
+          <div class="footer__contacts-item">
+            <div class="footer__title">Телефон:</div>
+            <a href="tel:7 495 220 53 20">7 495 220 53 20</a>
+          </div>
+          <div class="footer__contacts-item">
+            <div class="footer__title">E-mail:</div>
+            <a href="mailto:info@visaberi.ru">info@visaberi.ru</a>
+          </div>
+        </div>
+      </div>
+      <div class="footer__text">
+        <span>Последствия невыплаты заёмных средств:</span>
+        в случае невозвращения в условленный срок суммы кредита или суммы процентов за пользование заёмными средствами
+        кредитор вынуждено начислит штраф за просрочку платежа. большинство кредиторов идут на уступки и дают 3
+        дополнительных рабочих дня для оплаты. они предусмотрены на случай, к примеру, если банковский перевод занял
+        больше
+        времени, чем обычно. однако, в случае неполучения от вас какой-либо реакции в течение продолжительного \времени,
+        будет начислен штраф за просрочку срока погашения размером в среднем 0,10% от первоначальной суммы для займов,
+        0,03%
+        от суммы задолженности в среднем.
+      </div>
+      <div class="footer__menu">
+        <ul class="footer__menu-list">
+          <li><a href="#">Публичная оферта</a></li>
+          <li><a href="#">Пользовательское соглашение</a></li>
+          <li><a href="#">Согласие на обработку данных</a></li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU&amp;apikey=<ваш API-ключ>" type="text/javascript"></script>
+<script>
+  ymaps.ready(function () {
+    var myMap = new ymaps.Map('mapC', {
+        center: [55.773960068963845, 37.57791149999998],
+        zoom: 13,
+        controls: []
+      }),
+      MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
+        '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
+      ),
+      myPlacemarkWithContent = new ymaps.Placemark([55.773960068963845, 37.57791149999998], {
+        hintContent: 'г. Москва, ул. Грузинский Вал 11, стр 4, Офис 11',
+        balloonContent: 'г. Москва, ул. Грузинский Вал 11, стр 4, Офис 11'
+      }, {
+        // Опции.
+        // Необходимо указать данный тип макета.
+        iconLayout: 'default#imageWithContent',
+        // Своё изображение иконки метки.
+        iconImageHref: 'assets/img/marker.svg',
+        // Размеры метки.
+        iconImageSize: [48, 48],
+        // Смещение левого верхнего угла иконки относительно
+        // её "ножки" (точки привязки).
+        iconImageOffset: [-24, -24],
+        // Смещение слоя с содержимым относительно слоя с картинкой.
+        iconContentOffset: [15, 15],
+        // Макет содержимого.
+        iconContentLayout: MyIconContentLayout
+      });
+    myMap.controls.add('zoomControl');
+    myMap.geoObjects.add(myPlacemarkWithContent);
+    myMap.behaviors.disable('scrollZoom');
+  });
+</script>
+</body>
+</html>

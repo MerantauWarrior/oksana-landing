@@ -1,0 +1,332 @@
+@media (min-width: 768px) and (max-width: 1024px){
+    .slider-arrow {
+        top: 100%;
+        margin-top: 30px;
+    }
+    .slider-arrow--prev{
+        left: 50%;
+        margin-left: -50px;
+    }
+    .slider-arrow--next{
+        right: 50%;
+        margin-right: -50px;
+    }
+    .header__text{
+        margin: 50px auto;
+    }
+    .header__form{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .loan-object__items{
+        justify-content: center;
+    }
+    .loan-object-item{
+        margin: 30px;
+    }
+    .calculate__form{
+        justify-content: center;
+    }
+    .booking{
+        margin-top: 40px;
+        margin-right: 0;
+    }
+    .documents__inner{
+        justify-content: center;
+    }
+    .documents__info{
+        max-width: 100%;
+    }
+    .round-bg--online{
+        padding: 15px;
+        background: none;
+    }
+    .online__form{
+        padding: 15px;
+        background-color: #fff;
+    }
+    .online .inp, .online .select{
+        width: 49%;
+    }
+    .round-bg--feedbacks{
+        padding: 40px 15px;
+        background: none;
+    }
+    .feedbacks__inner{
+        padding: 15px;
+        background-color: #fff;
+    }
+    .feedback{
+        padding: 0;
+    }
+    .feedback-content{
+        max-width: 60%;
+    }
+    .round-bg--inrestors{
+        padding: 40px 15px;
+        background: none;
+    }
+    .inrestors__inner{
+        padding: 15px;
+        background-color: #fff;
+    }
+    .partners__items{
+        justify-content: center;
+    }
+    .partners__item{
+        margin: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape){
+    .footer__menu{
+        max-width: 100%;
+    }
+    .footer__menu-list li{
+        display: inline-block;
+        margin-right: 30px;
+    }
+}
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: portrait){
+    .inrestors__cta{
+        max-width: 100%;
+    }
+    .inrestors__cta-btn{
+        margin: 40px 0;
+    }
+    .inrestors__slider{
+        max-width: 100%;
+    }
+    .inrestors__cta-btn .btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .one-call__inner{
+        max-width: 530px;
+    }
+    .one-call__girl{
+        display: none;
+    }
+    .footer__inner{
+        align-items: flex-start;
+        justify-content: center;
+    }
+    .footer__info{
+        order: 1;
+    }
+    .footer__menu{
+        order: 2;
+        margin-left: 40px;
+    }
+    .footer__menu-list {
+        margin-top: 64px;
+    }
+    .footer__text{
+        order: 3;
+        max-width: 635px;
+        margin-right: auto;
+    }
+}
+@media (min-width: 320px) and (max-width: 767px){
+    .btn{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .inp--s, .inp--l, .inp--m{
+        width: 100%;
+    }
+    .inp--xs{
+        width: 150px;
+    }
+    .label-checkbox{
+        margin-bottom: 30px;
+    }
+    .slider-arrow {
+        top: 100%;
+        margin-top: 30px;
+    }
+    .slider-arrow--prev{
+        left: 50%;
+        margin-left: -50px;
+    }
+    .slider-arrow--next{
+        right: 50%;
+        margin-right: -50px;
+    }
+    .round-bg{
+        padding: 0 15px;
+    }
+    .section-title{
+        padding: 0;
+        text-align: center;
+    }
+    .section-title h2{
+        font-size: 20px;
+    }
+    .section-title p{
+        font-size: 16px;
+    }
+    .section-title__bullets{
+        display: none;
+    }
+    .header{
+        -webkit-background-size: cover;
+        background-size: cover;
+    }
+    .header__logo{
+        margin-right: 10px;
+    }
+    .header__info{
+        margin-top: 30px;
+    }
+    .header__text{
+        margin: 40px 0;
+    }
+    .header__title span{
+        display: block;
+        margin-bottom: 5px;
+        font-size: 30px;
+    }
+    .header__title{
+        font-size: 20px;
+    }
+    .header__form{
+        margin-left: 0;
+        padding: 30px 15px;
+        background: #e9f6fc;
+    }
+    .header__form-title{
+        font-size: 20px;
+    }
+    .calculate{
+        padding: 40px 0;
+    }
+    .calculator-radio__item label{
+        width: 135px;
+    }
+    .calculator__amount-value span{
+        font-size: 30px;
+    }
+    .booking{
+        margin-top: 30px;
+        margin-right: 0;
+        padding: 30px 15px;
+        background: #ffffff;
+    }
+    .booking__title{
+        font-size: 20px;
+    }
+    .loan-object{
+        padding: 40px 0;
+    }
+    .loan-object-item{
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .documents{
+        padding: 40px 0;
+    }
+    .documents__info{
+        margin-bottom: 30px;
+    }
+    .feedbacks{
+        padding: 40px 0 90px 0;
+    }
+    .round-bg--feedbacks{
+        margin-top: 40px;
+        background: none;
+    }
+    .feedbacks__inner{
+        background-color: #fff;
+    }
+    .feedback{
+        padding: 15px 0;
+    }
+    .feedback-content{
+        max-width: 355px;
+        margin-top: 15px;
+        padding: 0 15px;
+    }
+    .online{
+        padding: 40px 0;
+    }
+    .round-bg--online{
+        margin-top: 40px;
+        background: none;
+    }
+    .online__form{
+        padding: 30px 15px;
+        background-color: #fff;
+    }
+    .partners{
+        padding: 40px 0;
+    }
+    .partners__items{
+        justify-content: center;
+    }
+    .partners__item{
+        margin: 0 10px 30px 10px;
+    }
+    .partners__item:last-child{
+        margin: 0 10px;
+    }
+    .inrestors{
+        padding: 40px 0 90px 0;
+    }
+    .round-bg--inrestors{
+        padding: 15px;
+        background: none;
+    }
+    .inrestors__inner{
+        padding: 15px;
+        background-color: #fff;
+    }
+    .inrestors__cta-btn{
+        margin: 30px 0;
+    }
+    .inrestors-person__img{
+        margin-right: 0;
+        margin-bottom: 15px;
+    }
+    .inrestors__cta-text{
+        font-size: 20px;
+    }
+    .one-call{
+        padding: 40px 0;
+    }
+    .one-call__title, .one-call__number{
+        font-size: 24px;
+    }
+    .one-call__girl{
+        display: none;
+    }
+    .about{
+        padding: 40px 0;
+    }
+    .contacts__box{
+        position: static;
+        width: 100%;
+        max-width: 320px;
+        margin: 40px auto;
+    }
+    #mapC{
+        height: 300px;
+    }
+    .footer{
+        padding: 40px 0;
+    }
+    .footer__address{
+        margin-bottom: 20px;
+    }
+
+}
+@media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
+
+}
+@media (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
+    .inrestors-person__img, .inrestors-person__img img{
+        width: 100%;
+    }
+}
+@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait){
+
+}
