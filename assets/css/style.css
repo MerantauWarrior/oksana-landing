@@ -53,9 +53,9 @@ a{
 input, textarea, button, select, .slick-slide{
     outline: none;
     border:none;
-    -webkit-box-shadow: none;
-    -moz-box-shadow: none;
-    box-shadow: none;
+    -webkit-appearance: caret;
+    -moz-appearance: caret;
+    appearance: caret;
 }
 button{
     padding: 0;
