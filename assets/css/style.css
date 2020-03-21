@@ -53,9 +53,14 @@ a{
 input, textarea, button, select, .slick-slide{
     outline: none;
     border:none;
-    -webkit-appearance: caret;
-    -moz-appearance: caret;
-    appearance: caret;
+}
+input[type=text], input[type=tel]{
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
 }
 button{
     padding: 0;
