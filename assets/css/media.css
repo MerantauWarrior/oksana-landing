@@ -192,7 +192,15 @@
     .header__form{
         margin-left: 0;
         padding: 30px 15px;
-        background: #e9f6fc;
+        border-bottom: 1px solid #c9e5f1;
+        background:
+                radial-gradient(circle at 0 100%, rgba(0,0,0,0) 0, #f5fcff 0px),
+                radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 0, #f5fcff 0px),
+                radial-gradient(circle at 100% 0, rgba(0,0,0,0) 20px, #f5fcff 15px),
+                radial-gradient(circle at 0 0, rgba(204,0,0,0) 20px, #f5fcff 15px);
+        background-position: bottom left, bottom right, top right, top left;
+        background-size: 51% 50%;
+        background-repeat: no-repeat;
     }
     .header__form-title{
         font-size: 20px;
@@ -211,6 +219,15 @@
         margin-right: 0;
         padding: 30px 15px;
         background: #ffffff;
+        background:
+                radial-gradient(circle at 0 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 100% 0, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 0 0, rgba(204,0,0,0) 25px, #ffffff 25px);
+
+        background-position: bottom left, bottom right, top right, top left;
+        background-size: 51% 50%;
+        background-repeat: no-repeat;
     }
     .booking__title{
         font-size: 20px;
@@ -237,9 +254,17 @@
     }
     .feedbacks__inner{
         background-color: #fff;
+        background:
+                radial-gradient(circle at 0 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 100% 0, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 0 0, rgba(204,0,0,0) 25px, #ffffff 25px);
+        background-position: bottom left, bottom right, top right, top left;
+        background-size: 51% 50%;
+        background-repeat: no-repeat;
     }
     .feedback{
-        padding: 15px 0;
+        padding: 30px 0;
     }
     .feedback-content{
         max-width: 355px;
@@ -256,6 +281,14 @@
     .online__form{
         padding: 30px 15px;
         background-color: #fff;
+        background:
+                radial-gradient(circle at 0 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 100% 0, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 0 0, rgba(204,0,0,0) 25px, #ffffff 25px);
+        background-position: bottom left, bottom right, top right, top left;
+        background-size: 51% 50%;
+        background-repeat: no-repeat;
     }
     .partners{
         padding: 40px 0;
@@ -279,6 +312,19 @@
     .inrestors__inner{
         padding: 15px;
         background-color: #fff;
+        background:
+                radial-gradient(circle at 0 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 100% 0, rgba(0,0,0,0) 25px, #ffffff 25px),
+                radial-gradient(circle at 0 0, rgba(204,0,0,0) 25px, #ffffff 25px);
+        background-position: bottom left, bottom right, top right, top left;
+        background-size: 51% 50%;
+        background-repeat: no-repeat;
+    }
+    .inrestors__cta{
+        max-width: 100%;
+        margin-right: 0;
+        text-align: center;
     }
     .inrestors__cta-btn{
         margin: 30px 0;
