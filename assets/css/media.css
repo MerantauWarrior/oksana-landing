@@ -155,10 +155,10 @@
     .round-bg{
         padding: 0 15px;
     }
-    .section-title{
-        padding: 0;
-        text-align: center;
-    }
+    /*.section-title{*/
+        /*padding: 0;*/
+        /*text-align: center;*/
+    /*}*/
     .section-title h2{
         font-size: 20px;
     }
@@ -166,8 +166,11 @@
         font-size: 16px;
     }
     .section-title__bullets{
-        display: none;
+        top: 5px;
     }
+    /*.section-title__bullets{*/
+        /*display: none;*/
+    /*}*/
     .header{
         -webkit-background-size: cover;
         background-size: cover;
@@ -238,6 +241,23 @@
     .loan-object-item{
         margin-left: auto;
         margin-right: auto;
+    }
+    .loan-object-item__circle{
+        width: 120px;
+        height: 120px;
+    }
+    .loan-object-item__circle-inner{
+        width: 100px;
+        height: 100px;
+    }
+    .loan-object-item__title{
+        font-size: 12px;
+        margin-top: 15px;
+    }
+    .loan-object-item__circle-number{
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
     }
     .documents{
         padding: 40px 0;
@@ -366,13 +386,28 @@
 
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: landscape){
-
+    .loan-object-item{
+        width: 150px;
+    }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
     .inrestors-person__img, .inrestors-person__img img{
         width: 100%;
     }
+    .loan-object-item{
+        width: 50%;
+    }
+    .documents__info__text{
+        padding: 0;
+    }
+    .section-title p{
+        margin-left: -100px;
+    }
 }
-@media (min-width: 320px) and (max-width: 360px) and (orientation: portrait){
-
+@media (min-width: 375px) and (max-width: 767px) and (orientation: portrait){
+    .partners__item{
+        width: 150px;
+        height: 100px;
+        padding: 20px;
+    }
 }

@@ -504,6 +504,9 @@ input[type="radio"]:checked + label{
     text-align: center;
     color: #222222;
 }
+.booking__text span{
+    color: #ff0000;
+}
 .booking__btn{
     margin-bottom: 30px;
 }
@@ -596,11 +599,14 @@ input[type="radio"]:checked + label{
     max-width: 585px;
 }
 .documents__info__title{
+    position: relative;
+    padding-left: 100px;
     font-family:"Gotham Pro Bold",sans-serif;
     font-size: 20px;
     color: #222222;
 }
 .documents__info__text{
+    padding-left: 100px;
     margin-top: 15px;
     font-size: 16px;
     color: #222222;

@@ -15,10 +15,8 @@ $( document ).ready(function() {
   });
   $('#fSum').on('input', function () {
     var value = $(this).val();
-    if(value !== '' && value > 300000){
+    if(value !== ''){
       $('.sum').val(value).change();
-    }else{
-      $('.sum').val(300000).change();
     }
   });
   $('.date').rangeslider({

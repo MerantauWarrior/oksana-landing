@@ -80,9 +80,9 @@
       <div class="calculator">
         <div class="calculator__field">
           <label for="fSum" class="calculator__bold">Сумма кредита</label>
-          <input type="text" name="fSum" id="fSum" class="inp inp--xs" value="0">
+          <input type="text" name="fSum" id="fSum" class="inp inp--xs" value="300000">
           <div class="calculator__range">
-            <input type="range" min="300000" max="50000000" step="1" class="sum" value="300000">
+            <input type="range" min="300000" max="50000000" step="1000" class="sum" value="300000">
           </div>
           <div class="calculator__bold">300 000</div>
           <div class="calculator__bold">50 млн. руб.</div>
@@ -117,8 +117,9 @@
       <div class="booking">
         <div class="booking__inner">
           <div class="booking__title">Забронировать аванс</div>
-          <div class="booking__text">Кредит в размере от 300 000 рублей может быть выдан вам в течение одного рабочего
-            дня. <br>Аванс в размере от 30 000 рублей может быть выдан вам в течение 30 минут при посещении офиса.
+          <div class="booking__text">Кредит в размере от <span>300 000 рублей</span> может быть выдан вам в течение одного
+            рабочего
+            дня. <br>Аванс в размере от <span>30 000 рублей</span> может быть выдан вам в течение 30 минут при посещении офиса.
             <br><br>
             Если вам необходим аванс вы можете его забронировать
           </div>
@@ -236,7 +237,9 @@
   <div class="container">
     <div class="documents__inner">
       <div class="documents__info">
-        <div class="documents__info__title">Для оформления залога недвижимости в большиснтве
+        <div class="documents__info__title">
+          <div class="section-title__bullets"><span></span><span></span><span></span></div>
+          Для оформления залога недвижимости в большиснтве
           случаев достаточно двух документов:
         </div>
         <div class="documents__info__text">У нас вы можете получить бесплатную юридическую консультацию. Для всех
