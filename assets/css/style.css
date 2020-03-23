@@ -175,6 +175,9 @@ img{
     cursor: pointer;
     z-index: 100;
 }
+.slider-arrow:hover{
+    opacity: 0.6;
+}
 .slider-arrow--prev{
     left: -25px;
     background: url("../img/slider-prev.png") no-repeat center center;
@@ -254,6 +257,62 @@ input[type="radio"]{
 }
 input[type="checkbox"]:checked + span{
     background: url("../img/checkbox.png") no-repeat center center, #ffffff;
+}
+.modal{
+    position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: rgba(0,0,0,0.5);
+    overflow: auto;
+    z-index: 999;
+}
+.modal__window{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    padding: 30px;
+    -webkit-transform: translate(-50%, -50%);
+    -moz-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    -o-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background:
+            radial-gradient(circle at 0 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+            radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
+            radial-gradient(circle at 100% 0, rgba(0,0,0,0) 25px, #ffffff 25px),
+            radial-gradient(circle at 0 0, rgba(204,0,0,0) 25px, #ffffff 25px);
+    background-position: bottom left, bottom right, top right, top left;
+    background-size: 51% 51%;
+    background-repeat: no-repeat;
+}
+.modal__close{
+    position: absolute;
+    top: -24px;
+    right: -24px;
+    width: 50px;
+    height: 50px;
+    background: url("../img/close.png") no-repeat center center, #fff;
+    -webkit-border-radius: 100%;
+    -moz-border-radius: 100%;
+    border-radius: 100%;
+    border: 1px solid #4cd8bb;
+    cursor: pointer;
+}
+.modal__form{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 30px;
+}
+.modal__avans{
+    margin-bottom: 30px;
+    font-size: 16px;
+}
+.modal__avans span{
+    font-family:"Gotham Pro Bold",sans-serif;
 }
 /*HEADER*/
 .header{

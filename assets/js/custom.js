@@ -1,6 +1,21 @@
 $( document ).ready(function() {
-
+  //Modal
+  document.getElementsByClassName('modal')[0].addEventListener('click', function (event) {
+    if (event.target === document.getElementsByClassName('modal')[0]) {
+      $('.modal').hide();
+    }
+  });
+  $('.modal__close').click(function () {
+    $('.modal').hide();
+  });
   //Caclulator
+  function calculate() {
+    if (payment_type == 2) {
+      monthly = ((sum/100*percent)*srok)/(srok*12);
+    } else {
+      monthly = (((sum/100*percent)*srok)+sum)/(srok*12);
+    }
+  }
   $('.sum').rangeslider({
     polyfill: false,
     rangeClass: 'calculator-slider',
