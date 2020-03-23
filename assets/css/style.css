@@ -259,6 +259,7 @@ input[type="checkbox"]:checked + span{
     background: url("../img/checkbox.png") no-repeat center center, #ffffff;
 }
 .modal{
+    display: none;
     position: fixed;
     top: 0;
     right: 0;
@@ -269,6 +270,7 @@ input[type="checkbox"]:checked + span{
     z-index: 999;
 }
 .modal__window{
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;

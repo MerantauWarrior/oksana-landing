@@ -76,7 +76,7 @@
       <div class="section-title__bullets"><span></span><span></span><span></span></div>
       <h2>Рассчитайте ваш кредит</h2>
     </div>
-    <div class="calculate__form">
+    <form class="calculate__form">
       <div class="calculator">
         <div class="calculator__field">
           <label for="fSum" class="calculator__bold">Сумма кредита</label>
@@ -100,11 +100,11 @@
           <div class="calculator__bold">Тип платежа</div>
           <div class="calculator-radio">
             <div class="calculator-radio__item">
-              <input type="radio" name="creditType" id="annuitet" checked>
+              <input type="radio" name="creditType" id="annuitet" value="1" checked>
               <label for="annuitet">Аннуитетный</label>
             </div>
             <div class="calculator-radio__item">
-              <input type="radio" name="creditType" id="sharoviy">
+              <input type="radio" name="creditType" id="sharoviy" value="2">
               <label for="sharoviy">Шаровый</label>
             </div>
           </div>
@@ -117,14 +117,17 @@
       <div class="booking">
         <div class="booking__inner">
           <div class="booking__title">Забронировать аванс</div>
-          <div class="booking__text">Кредит в размере от <span>300 000 рублей</span> может быть выдан вам в течение одного
+          <div class="booking__text">Кредит в размере от <span class="credit-rub">300 000 рублей</span> может быть
+            выдан вам в течение
+            одного
             рабочего
-            дня. <br>Аванс в размере от <span>30 000 рублей</span> может быть выдан вам в течение 30 минут при посещении офиса.
+            дня. <br>Аванс в размере от <span class="avans-rub">30 000 рублей</span> может быть выдан вам в течение 30 минут при
+            посещении офиса.
             <br><br>
             Если вам необходим аванс вы можете его забронировать
           </div>
           <div class="booking__btn">
-            <a href="#" class="btn btn--blue"><span>Забронировать</span></a>
+            <a href="#avans" class="btn btn--blue js-modal"><span>Забронировать</span></a>
           </div>
           <div class="booking__form">
             <input type="text" name="ww" id="ww" class="inp inp--s" placeholder="Ваше имя">
@@ -140,7 +143,7 @@
           </div>
         </div>
       </div>
-    </div>
+    </form>
   </div>
 </section>
 
@@ -679,7 +682,7 @@
         <input type="tel" name="avans-tel" id="avans-tel" class="inp inp--s" placeholder="Ваш телефон">
       </div>
       <div class="modal__avans">
-        Аванс: <span>30 000 рублей</span>
+        Аванс: <span class="avans-rub">30 000 рублей</span>
       </div>
       <a href="#" class="btn"><span>Отправить</span></a>
     </form>
