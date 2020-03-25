@@ -155,10 +155,6 @@
     .round-bg{
         padding: 0 15px;
     }
-    /*.section-title{*/
-        /*padding: 0;*/
-        /*text-align: center;*/
-    /*}*/
     .section-title h2{
         font-size: 20px;
     }
@@ -168,10 +164,8 @@
     .section-title__bullets{
         top: 5px;
     }
-    /*.section-title__bullets{*/
-        /*display: none;*/
-    /*}*/
     .header{
+        padding-bottom: 40px;
         -webkit-background-size: cover;
         background-size: cover;
     }
@@ -195,10 +189,9 @@
     .header__form{
         margin-left: 0;
         padding: 30px 15px;
-        border-bottom: 1px solid #c9e5f1;
         background:
-                radial-gradient(circle at 0 100%, rgba(0,0,0,0) 0, #f5fcff 0px),
-                radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 0, #f5fcff 0px),
+                radial-gradient(circle at 0 100%, rgba(0,0,0,0) 20px, #f5fcff 0px),
+                radial-gradient(circle at 100% 100%, rgba(0,0,0,0) 20px, #f5fcff 0px),
                 radial-gradient(circle at 100% 0, rgba(0,0,0,0) 20px, #f5fcff 15px),
                 radial-gradient(circle at 0 0, rgba(204,0,0,0) 20px, #f5fcff 15px);
         background-position: bottom left, bottom right, top right, top left;
@@ -422,5 +415,8 @@
         -o-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
         max-width: 330px;
+    }
+    .modal__window--l{
+        max-width: 600px;
     }
 }

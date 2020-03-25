@@ -54,6 +54,7 @@
       <div class="header__form-inner">
         <div class="header__form-title">Отправить заявку</div>
         <form method="get" class="header__form-form">
+          <input type="hidden" name="formName" id="h-0" value="Из верхушки сайта">
           <input type="text" name="uname" id="uname" class="inp inp--s" placeholder="Ваше имя">
           <input type="tel" name="utel" id="utel" class="inp inp--s" placeholder="Ваш телефон">
           <div class="online__form-btns">
@@ -269,7 +270,7 @@
         <div class="loan-object-item__title">Документ основание на владение объектом недвижимости</div>
       </div>
     </div>
-    <div class="documents__btn"><a href="#" class="btn"><span>Заказать консультацию</span></a></div>
+    <div class="documents__btn"><a href="#consultation" class="btn js-modal"><span>Заказать консультацию</span></a></div>
   </div>
 </section>
 
@@ -284,6 +285,7 @@
   </div>
   <div class="round-bg round-bg--online">
     <form method="get" class="online__form">
+      <input type="hidden" name="formName" id="onl" value="Оценить сейчас">
       <select name="q" id="q" class="select inp--m" title="Количество комнат">
         <option value="0" selected>Количество комнат</option>
         <option value="1">1</option>
@@ -365,7 +367,7 @@
                 Только плюсы – оформление быстрое, документов
               </div>
               <div class="feedback-content__btn">
-                <a href="#" class="btn"><span>Оформить себе</span></a>
+                <a href="#oformitsebe" class="btn js-modal"><span>Оформить себе</span></a>
               </div>
             </div>
           </div>
@@ -418,7 +420,7 @@
                 Только плюсы – оформление быстрое, документов
               </div>
               <div class="feedback-content__btn">
-                <a href="#" class="btn"><span>Оформить себе</span></a>
+                <a href="#oformitsebe" class="btn js-modal"><span>Оформить себе</span></a>
               </div>
             </div>
           </div>
@@ -465,7 +467,7 @@
           прямо сейчас!
         </div>
         <div class="inrestors__cta-btn">
-          <a href="#" class="btn"><span>Записаться</span></a>
+          <a href="#zapisatsa" class="btn js-modal"><span>Записаться</span></a>
         </div>
       </div>
       <div class="inrestors__slider">
@@ -546,7 +548,7 @@
       </div>
       <a href="tel:+7 (495) 162 67 58" class="one-call__number">+7 (495) 162 67 58</a>
       <div class="one-call__btn">
-        <a href="#" class="btn"><span>Заказать звонок</span></a>
+        <a href="#zvonok" class="btn js-modal"><span>Заказать звонок</span></a>
       </div>
     </div>
     <div class="one-call__girl">
@@ -603,8 +605,7 @@
       <div class="contacts__title">Контакты</div>
       <div class="contacts__item">
         <div>Адрес:</div>
-        <div>г. Москва,</div>
-        <div>ул. Грузинский Вал 11, стр 4, Офис 11</div>
+        <div>г. Москва, ул. Площадь Тверская Застава, дом 3, офис 403, этаж 4, комната 9.</div>
       </div>
       <div class="contacts__item">
         <div>Телефон:</div>
@@ -612,7 +613,7 @@
       </div>
       <div class="contacts__item">
         <div> Почта:</div>
-        <a href="mailto:info@visaberi.ru">info@visaberi.ru</a>
+        <a href="mailto:zalog.center@mail.ru">zalog.center@mail.ru</a>
       </div>
     </div>
   </div>
@@ -626,7 +627,7 @@
         <div class="footer__logo">Zalog.center</div>
         <div class="footer__address">
           <div class="footer__title">ВЦ Белорусская</div>
-          <div>г. Москва, улица Грузинский вал, дом 11, стр. 4. офис 11. этаж - 2.</div>
+          <div>г. Москва, ул. Площадь Тверская Застава, дом 3, офис 403, этаж 4, комната 9.</div>
           <div>Бесплатная парковка для наших гостей!</div>
           <div>Время работы офиса:</div>
           <div>пн-пт с 10:00 до 20:00</div>
@@ -644,7 +645,7 @@
           </div>
           <div class="footer__contacts-item">
             <div class="footer__title">E-mail:</div>
-            <a href="mailto:info@visaberi.ru">info@visaberi.ru</a>
+            <a href="mailto:zalog.center@mail.ru">zalog.center@mail.ru</a>
           </div>
         </div>
       </div>
@@ -675,16 +676,115 @@
     <div class="modal__close"></div>
     <div class="booking__title">Забронировать аванс</div>
     <form class="modal__form">
+      <input type="hidden" name="formName" id="a-1" value="Забронировать аванс">
       <div>
-        <input type="text" name="avans-name" id="avans-name" class="inp inp--s" placeholder="Ваше имя">
+        <input type="text" name="name" id="avans-name" class="inp inp--s" placeholder="Ваше имя">
       </div>
       <div>
-        <input type="tel" name="avans-tel" id="avans-tel" class="inp inp--s" placeholder="Ваш телефон">
+        <input type="tel" name="tel" id="avans-tel" class="inp inp--s" placeholder="Ваш телефон">
       </div>
       <div class="modal__avans">
         Аванс: <span class="avans-rub">30 000 рублей</span>
       </div>
       <a href="#" class="btn"><span>Отправить</span></a>
+    </form>
+  </div>
+  <div class="modal__window" id="consultation">
+    <div class="modal__close"></div>
+    <div class="booking__title">Заказать консультацию</div>
+    <form class="modal__form">
+      <input type="hidden" name="formName" id="c-1" value="Заказать консультацию">
+      <div>
+        <input type="text" name="name" id="consultation-name" class="inp inp--s" placeholder="Ваше имя">
+      </div>
+      <div>
+        <input type="tel" name="tel" id="consultation-tel" class="inp inp--s" placeholder="Ваш телефон">
+      </div>
+      <a href="#" class="btn"><span>Отправить</span></a>
+    </form>
+  </div>
+  <div class="modal__window" id="oformitsebe">
+    <div class="modal__close"></div>
+    <div class="booking__title">Оформить себе</div>
+    <form class="modal__form">
+      <input type="hidden" name="formName" id="o-1" value="Оформить себе">
+      <div>
+        <input type="text" name="name" id="oformitsebe-name" class="inp inp--s" placeholder="Ваше имя">
+      </div>
+      <div>
+        <input type="tel" name="tel" id="oformitsebe-tel" class="inp inp--s" placeholder="Ваш телефон">
+      </div>
+      <a href="#" class="btn"><span>Отправить</span></a>
+    </form>
+  </div>
+  <div class="modal__window" id="zvonok">
+    <div class="modal__close"></div>
+    <div class="booking__title">Заказать звонок</div>
+    <form class="modal__form">
+      <input type="hidden" name="formName" id="z-1" value="Заказать Звонок">
+      <div>
+        <input type="text" name="name" id="zvonok-name" class="inp inp--s" placeholder="Ваше имя">
+      </div>
+      <div>
+        <input type="tel" name="tel" id="zvonok-tel" class="inp inp--s" placeholder="Ваш телефон">
+      </div>
+      <a href="#" class="btn"><span>Отправить</span></a>
+    </form>
+  </div>
+  <div class="modal__window modal__window--l" id="zapisatsa">
+    <div class="modal__close"></div>
+    <div class="booking__title">Записаться</div>
+    <form class="modal__form">
+      <input type="hidden" name="formName" id="zps-1" value="Записаться">
+      <div class="modal-zapisatsa__row">
+        <div class="modal-zapisatsa__date">
+          <div class="modal-zapisatsa__date-btn-prev"></div>
+          <div class="modal-zapisatsa__date-value">09.05.2020</div>
+          <div class="modal-zapisatsa__date-btn-next"></div>
+        </div>
+        <div>
+          <select name="time" id="z-time" class="select inp--s">
+            <option value="0" selected>Выберите время</option>
+            <option value="10:00">10:00</option>
+            <option value="10:00">10:30</option>
+            <option value="10:00">11:00</option>
+            <option value="10:00">11:30</option>
+            <option value="10:00">12:00</option>
+            <option value="10:00">12:30</option>
+            <option value="10:00">13:00</option>
+            <option value="10:00">13:30</option>
+            <option value="10:00">14:00</option>
+            <option value="10:00">14:30</option>
+            <option value="10:00">15:00</option>
+            <option value="10:00">15:30</option>
+            <option value="10:00">16:00</option>
+            <option value="10:00">16:30</option>
+            <option value="10:00">17:00</option>
+            <option value="10:00">17:30</option>
+            <option value="10:00">18:00</option>
+            <option value="10:00">18:30</option>
+            <option value="10:00">19:00</option>
+          </select>
+        </div>
+      </div>
+      <div class="modal-zapisatsa__row">
+        <div>
+          <input type="text" name="name" id="zapisatsa-name" class="inp inp--s" placeholder="Ваше имя">
+        </div>
+        <div>
+          <input type="tel" name="tel" id="zapisatsa-tel" class="inp inp--s" placeholder="Ваш телефон">
+        </div>
+      </div>
+      <div class="modal-zapisatsa__row">
+        <div>
+          <input type="number" min="300000" step="1000" name="sum" id="zapisatsa-sum" class="inp inp--s"
+                 placeholder="Необходимая сумма">
+        </div>
+        <div>
+          <input type="text" name="object" id="zapisatsa-object" class="inp inp--s" placeholder="Объект залога">
+        </div>
+      </div>
+      <a href="#" class="btn"><span>Записаться</span></a>
     </form>
   </div>
 </div>
@@ -693,16 +793,16 @@
 <script>
   ymaps.ready(function () {
     var myMap = new ymaps.Map('mapC', {
-        center: [55.773960068963845, 37.57791149999998],
-        zoom: 13,
+        center: [55.775338, 37.581981],
+        zoom: 15,
         controls: []
       }),
       MyIconContentLayout = ymaps.templateLayoutFactory.createClass(
         '<div style="color: #FFFFFF; font-weight: bold;">$[properties.iconContent]</div>'
       ),
-      myPlacemarkWithContent = new ymaps.Placemark([55.773960068963845, 37.57791149999998], {
-        hintContent: 'г. Москва, ул. Грузинский Вал 11, стр 4, Офис 11',
-        balloonContent: 'г. Москва, ул. Грузинский Вал 11, стр 4, Офис 11'
+      myPlacemarkWithContent = new ymaps.Placemark([55.775338, 37.581981], {
+        hintContent: 'Москва, ул. Площадь Тверская Застава, дом 3, офис 403, этаж 4, комната 9.',
+        balloonContent: 'Москва, ул. Площадь Тверская Застава, дом 3, офис 403, этаж 4, комната 9.'
       }, {
         // Опции.
         // Необходимо указать данный тип макета.

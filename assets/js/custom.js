@@ -9,22 +9,57 @@ $( document ).ready(function() {
   document.getElementsByClassName('modal')[0].addEventListener('click', function (event) {
     if (event.target === document.getElementsByClassName('modal')[0]) {
       $('.modal').hide();
+      $('.modal__window').hide();
     }
   });
   $('.modal__close').click(function () {
+    $('.modal__window').hide();
     $('.modal').hide();
+  });
+  //Modal date
+  function formatDate(date) {
+    var dd = date.getDate();
+    var mm = date.getMonth()+1;
+    var yyyy = date.getFullYear();
+    dd<10 ? dd='0'+dd : dd;
+    mm<10 ? mm='0'+mm : mm;
+    return dd+'.'+mm+'.'+yyyy;
+  }
+  function checkDate(date) {
+    if(new Date(date).getTime() < new Date().getTime()){
+      $('.modal-zapisatsa__date-btn-prev').hide();
+    }else {
+      $('.modal-zapisatsa__date-btn-prev').show();
+    }
+  }
+  var today = new Date();
+  formatDate(today);
+  $('.modal-zapisatsa__date-value').html(formatDate(today));
+  $('.modal-zapisatsa__date-btn-prev').click(function () {
+    today.setDate(today.getDate() - 1);
+    checkDate(today);
+    $('.modal-zapisatsa__date-value').html(formatDate(today));
+  });
+  $('.modal-zapisatsa__date-btn-next').click(function () {
+    today.setDate(today.getDate() + 1);
+    checkDate(today);
+    $('.modal-zapisatsa__date-value').html(formatDate(today));
   });
   //Caclulator
   var percent = 8, srok, sum, payment_type = 1;
+  function niceNum(num) {
+    var num = num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ");
+    return num;
+  }
   function calculate() {
     if (payment_type === 2) {
       monthly = parseInt(((sum/100*percent)*srok)/(srok*12));
     } else {
       monthly = parseInt((((sum/100*percent)*srok)+sum)/(srok*12));
     }
-    $('.calculator__amount-value span').text(monthly);
-    $('.credit-rub').text(sum + ' рублей');
-    $('.avans-rub').text(sum/10 + ' рублей');
+    $('.calculator__amount-value span').text(niceNum(monthly));
+    $('.credit-rub').text(niceNum(sum) + ' рублей');
+    $('.avans-rub').text(niceNum(sum/10) + ' рублей');
   }
   $('.sum').rangeslider({
     polyfill: false,
