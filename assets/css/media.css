@@ -396,6 +396,13 @@
     .section-title p{
         margin-left: -100px;
     }
+    .modal__window--l{
+        margin: 40px 0;
+        max-width: 85%;
+    }
+    .modal-zapisatsa__row > div{
+        width: 100%;
+    }
 }
 @media (min-width: 375px) and (max-width: 767px) and (orientation: portrait){
     .partners__item{
