@@ -1,4 +1,5 @@
 $( document ).ready(function() {
+  console.log('Work!');
   //Modal
   $('.js-modal').click(function (e) {
     e.preventDefault();
