@@ -1,5 +1,4 @@
 $( document ).ready(function() {
-  console.log('Work!');
   //Modal
   $('.js-modal').click(function (e) {
     e.preventDefault();
@@ -34,23 +33,21 @@ $( document ).ready(function() {
     }
   }
   var today = new Date();
-  formatDate(today);
-  $('.modal-zapisatsa__date-value').html(formatDate(today));
+  $('.modal-zapisatsa__date-value').val(formatDate(today));
   $('.modal-zapisatsa__date-btn-prev').click(function () {
     today.setDate(today.getDate() - 1);
     checkDate(today);
-    $('.modal-zapisatsa__date-value').html(formatDate(today));
+    $('.modal-zapisatsa__date-value').val(formatDate(today));
   });
   $('.modal-zapisatsa__date-btn-next').click(function () {
     today.setDate(today.getDate() + 1);
     checkDate(today);
-    $('.modal-zapisatsa__date-value').html(formatDate(today));
+    $('.modal-zapisatsa__date-value').val(formatDate(today));
   });
   //Caclulator
   var percent = 8, srok, sum, payment_type = 1;
   function niceNum(num) {
-    var num = num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ");
-    return num;
+    return num.toString().replace(/(\d)(?=(\d{3})+(?!\d))/g, "$1 ");
   }
   function calculate() {
     if (payment_type === 2) {
@@ -61,6 +58,7 @@ $( document ).ready(function() {
     $('.calculator__amount-value span').text(niceNum(monthly));
     $('.credit-rub').text(niceNum(sum) + ' рублей');
     $('.avans-rub').text(niceNum(sum/10) + ' рублей');
+    $('input[name="modal-avans"]').val(niceNum(sum/10));
   }
   $('.sum').rangeslider({
     polyfill: false,
@@ -127,6 +125,25 @@ $( document ).ready(function() {
     dots:false,
     prevArrow: $('.js-investor-prev'),
     nextArrow: $('.js-investor-next')
+  });
+  //Forms Handling
+  $('.js-submit').click(function (e) {
+    e.preventDefault();
+    var form = $(this).closest('form');
+    console.log(form);
+    var serializedData = form.serialize();
+    console.log(serializedData);
+    var request = $.ajax({
+      url: "handler.php",
+      type: "post",
+      data: serializedData
+    });
+    request.done(function (response, textStatus, jqXHR) {
+      // form.find("input, textarea").val('');
+      $('.modal').show();
+      $('.modal__window*').hide();
+      $('.modal__window#spasibo').show();
+    });
   });
 
 });

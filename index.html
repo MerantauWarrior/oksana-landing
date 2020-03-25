@@ -55,15 +55,15 @@
         <div class="header__form-title">Отправить заявку</div>
         <form method="get" class="header__form-form">
           <input type="hidden" name="formName" id="h-0" value="Из верхушки сайта">
-          <input type="text" name="uname" id="uname" class="inp inp--s" placeholder="Ваше имя">
-          <input type="tel" name="utel" id="utel" class="inp inp--s" placeholder="Ваш телефон">
+          <input type="text" name="name" id="uname" class="inp inp--s" placeholder="Ваше имя">
+          <input type="tel" name="tel" id="utel" class="inp inp--s" placeholder="Ваш телефон">
           <div class="online__form-btns">
             <label for="chh" class="label-checkbox inp--s">
-              <input type="checkbox" name="chh" id="chh" checked>
+              <input type="checkbox" name="agree" id="chh" checked>
               <span></span>
               <span>Даю согласие на обработку персональных данных</span>
             </label>
-            <a href="#" class="btn"><span>Получить деньги</span></a>
+            <a href="#" class="btn js-submit"><span>Получить деньги</span></a>
           </div>
         </form>
       </div>
@@ -81,7 +81,7 @@
       <div class="calculator">
         <div class="calculator__field">
           <label for="fSum" class="calculator__bold">Сумма кредита</label>
-          <input type="text" name="fSum" id="fSum" class="inp inp--xs" value="300000">
+          <input type="text" name="sum" id="fSum" class="inp inp--xs" value="300000">
           <div class="calculator__range">
             <input type="range" min="300000" max="50000000" step="1000" class="sum" value="300000">
           </div>
@@ -90,7 +90,7 @@
         </div>
         <div class="calculator__field">
           <label for="fDate" class="calculator__bold">Срок кредита</label>
-          <input type="text" name="fDate" id="fDate" class="inp inp--xs" value="1">
+          <input type="text" name="srok" id="fDate" class="inp inp--xs" value="1">
           <div class="calculator__range">
             <input type="range" min="1" max="20" step="1" class="date" value="1">
           </div>
@@ -131,15 +131,16 @@
             <a href="#avans" class="btn btn--blue js-modal"><span>Забронировать</span></a>
           </div>
           <div class="booking__form">
-            <input type="text" name="ww" id="ww" class="inp inp--s" placeholder="Ваше имя">
-            <input type="tel" name="wqw" id="wqw" class="inp inp--s" placeholder="Ваш телефон">
+            <input type="hidden" name="formName" id="c-0" value="Получить деньги">
+            <input type="text" name="name" id="ww" class="inp inp--s" placeholder="Ваше имя">
+            <input type="tel" name="tel" id="wqw" class="inp inp--s" placeholder="Ваш телефон">
             <div class="online__form-btns">
               <label for="chq" class="label-checkbox inp--s">
-                <input type="checkbox" name="chq" id="chq" checked>
+                <input type="checkbox" name="agree" id="chq" checked>
                 <span></span>
                 <span>Даю согласие на обработку персональных данных</span>
               </label>
-              <a href="#" class="btn"><span>Получить деньги</span></a>
+              <a href="#" class="btn js-submit"><span>Получить деньги</span></a>
             </div>
           </div>
         </div>
@@ -286,22 +287,22 @@
   <div class="round-bg round-bg--online">
     <form method="get" class="online__form">
       <input type="hidden" name="formName" id="onl" value="Оценить сейчас">
-      <select name="q" id="q" class="select inp--m" title="Количество комнат">
+      <select name="rooms" id="q" class="select inp--m" title="Количество комнат">
         <option value="0" selected>Количество комнат</option>
         <option value="1">1</option>
         <option value="2">2</option>
       </select>
-      <input type="text" name="aq" id="aq" class="inp inp--l" placeholder="Адрес">
-      <input type="text" name="qq" id="qq" class="inp inp--m" placeholder="Площадь м2">
-      <input type="text" name="aqw" id="aqw" class="inp inp--s" placeholder="Город">
-      <input type="tel" name="ae" id="ae" class="inp inp--s" placeholder="Ваш телефон">
+      <input type="text" name="address" id="aq" class="inp inp--l" placeholder="Адрес">
+      <input type="text" name="meters" id="qq" class="inp inp--m" placeholder="Площадь м2">
+      <input type="text" name="city" id="aqw" class="inp inp--s" placeholder="Город">
+      <input type="tel" name="let" id="ae" class="inp inp--s" placeholder="Ваш телефон">
       <div class="online__form-btns">
         <label for="ch" class="label-checkbox inp--s">
-          <input type="checkbox" name="ch" id="ch" checked>
+          <input type="checkbox" name="agree" id="ch" checked>
           <span></span>
           <span>Даю согласие на обработку персональных данных</span>
         </label>
-        <a href="#" class="btn"><span>Оценить сейчас</span></a>
+        <a href="#" class="btn js-submit"><span>Оценить сейчас</span></a>
       </div>
     </form>
   </div>
@@ -672,11 +673,16 @@
 </footer>
 
 <div class="modal">
+  <div class="modal__window" id="spasibo">
+    <div class="modal__close"></div>
+    <div class="booking__title">Спасибо, ваша заявка успешно отправлена</div>
+  </div>
   <div class="modal__window" id="avans">
     <div class="modal__close"></div>
     <div class="booking__title">Забронировать аванс</div>
     <form class="modal__form">
       <input type="hidden" name="formName" id="a-1" value="Забронировать аванс">
+      <input type="hidden" name="avans" id="a-2" value="30000">
       <div>
         <input type="text" name="name" id="avans-name" class="inp inp--s" placeholder="Ваше имя">
       </div>
@@ -686,7 +692,7 @@
       <div class="modal__avans">
         Аванс: <span class="avans-rub">30 000 рублей</span>
       </div>
-      <a href="#" class="btn"><span>Отправить</span></a>
+      <a href="#" class="btn js-submit"><span>Отправить</span></a>
     </form>
   </div>
   <div class="modal__window" id="consultation">
@@ -700,7 +706,7 @@
       <div>
         <input type="tel" name="tel" id="consultation-tel" class="inp inp--s" placeholder="Ваш телефон">
       </div>
-      <a href="#" class="btn"><span>Отправить</span></a>
+      <a href="#" class="btn js-submit"><span>Отправить</span></a>
     </form>
   </div>
   <div class="modal__window" id="oformitsebe">
@@ -714,7 +720,7 @@
       <div>
         <input type="tel" name="tel" id="oformitsebe-tel" class="inp inp--s" placeholder="Ваш телефон">
       </div>
-      <a href="#" class="btn"><span>Отправить</span></a>
+      <a href="#" class="btn js-submit"><span>Отправить</span></a>
     </form>
   </div>
   <div class="modal__window" id="zvonok">
@@ -728,7 +734,7 @@
       <div>
         <input type="tel" name="tel" id="zvonok-tel" class="inp inp--s" placeholder="Ваш телефон">
       </div>
-      <a href="#" class="btn"><span>Отправить</span></a>
+      <a href="#" class="btn js-submit"><span>Отправить</span></a>
     </form>
   </div>
   <div class="modal__window modal__window--l" id="zapisatsa">
@@ -739,7 +745,7 @@
       <div class="modal-zapisatsa__row">
         <div class="modal-zapisatsa__date">
           <div class="modal-zapisatsa__date-btn-prev"></div>
-          <div class="modal-zapisatsa__date-value">09.05.2020</div>
+          <input type="text" name="date" id="z-date" value="09.05.2020" class="modal-zapisatsa__date-value" readonly>
           <div class="modal-zapisatsa__date-btn-next"></div>
         </div>
         <div>
@@ -784,7 +790,7 @@
           <input type="text" name="object" id="zapisatsa-object" class="inp inp--s" placeholder="Объект залога">
         </div>
       </div>
-      <a href="#" class="btn"><span>Записаться</span></a>
+      <a href="#" class="btn js-submit"><span>Записаться</span></a>
     </form>
   </div>
 </div>
