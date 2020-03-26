@@ -58,7 +58,7 @@ $( document ).ready(function() {
     $('.calculator__amount-value span').text(niceNum(monthly));
     $('.credit-rub').text(niceNum(sum) + ' рублей');
     $('.avans-rub').text(niceNum(sum/10) + ' рублей');
-    $('input[name="modal-avans"]').val(niceNum(sum/10));
+    $('input[name="avans"]').val(niceNum(sum/10));
   }
   $('.sum').rangeslider({
     polyfill: false,

@@ -178,13 +178,24 @@
     .header__text{
         margin: 40px 0;
     }
+    .header__info-text-big{
+        display: inline-block;
+        margin-bottom: 3px;
+        font-size: 20px;
+    }
+    .header__benefits-item-title{
+        font-size: 16px;
+    }
+    .header__benefits-item-text{
+        font-size: 20px;
+    }
     .header__title span{
         display: block;
         margin-bottom: 5px;
         font-size: 30px;
     }
     .header__title{
-        font-size: 20px;
+        font-size: 16px;
     }
     .header__form{
         margin-left: 0;
@@ -323,7 +334,7 @@
         background: none;
     }
     .inrestors__inner{
-        padding: 15px;
+        padding: 30px 15px 15px 15px;
         background-color: #fff;
         background:
                 radial-gradient(circle at 0 100%, rgba(0,0,0,0) 25px, #ffffff 25px),
@@ -347,7 +358,7 @@
         margin-bottom: 15px;
     }
     .inrestors__cta-text{
-        font-size: 20px;
+        font-size: 16px;
     }
     .one-call{
         padding: 40px 0;
@@ -373,6 +384,9 @@
     .footer{
         padding: 40px 0;
     }
+    .footer__logo{
+        font-size: 36px;
+    }
     .footer__address{
         margin-bottom: 20px;
     }
@@ -384,7 +398,12 @@
     }
 }
 @media (min-width: 320px) and (max-width: 767px) and (orientation: portrait){
-    .inrestors-person__img, .inrestors-person__img img{
+    .inrestors-person__img{
+        width: 60%;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+    .inrestors-person__img img{
         width: 100%;
     }
     .loan-object-item{
@@ -403,13 +422,6 @@
     .modal-zapisatsa__row > div{
         width: 100%;
     }
-}
-@media (min-width: 375px) and (max-width: 767px) and (orientation: portrait){
-    .partners__item{
-        width: 150px;
-        height: 100px;
-        padding: 20px;
-    }
     .modal__window--l{
         position: relative;
         top: 0;
@@ -419,6 +431,13 @@
         -ms-transform: translate(-50%, 0);
         -o-transform: translate(-50%, 0);
         transform: translate(-50%, 0);
+    }
+}
+@media (min-width: 375px) and (max-width: 767px) and (orientation: portrait){
+    .partners__item{
+        width: 150px;
+        height: 100px;
+        padding: 20px;
     }
 }
 @media (max-height: 400px){

@@ -107,7 +107,7 @@
     }
 
 
-   $apiKey = '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';
+   $apiKey = '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';
 require("sendgrid-php/sendgrid-php.php");
 
 $email = new \SendGrid\Mail\Mail();
